@@ -1,29 +1,23 @@
-body,h1,h2,h3,h4,h5,h6,p {font-family: "Lato", sans-serif; color: #f0f0f0;}
+body,h1,h2,h3,h4,h5,h6,p {font-family: "Lato", sans-serif; color: #F2E8CF;}
 
 body {
   margin: 0;
   padding: 0;
-  font-size: 0.7rem;
-  background-color: #3c3c3c;
+  min-height: 100vh;
+  font-size: 1rem;
+  background-color: #162719;
 }
 
 .Main-Info {
     text-align: center;
-    padding-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 0;
+    padding-top: 10%;
 }
 
 .profile-picture {
-    width: 150px;
-    height: 150px;
-    border-radius: 15%;
+    width: 170px;
+    height: 170px;
+    border-radius: 25%;
     object-fit: contain;
-}
-
-.name {
-    size: 100%;
 }
 
 .bio {
@@ -31,37 +25,58 @@ body {
     line-height: 25px;
 }
 
-.Personal {
-    size: 100%;
+nav {
+    margin-top: 35px;
 }
 
-.Projects {
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
+nav ul, li {
+    margin: 0;
+    padding: 0;
 }
 
-.Project-align li {
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
     list-style: none;
-    background-color: #000000;
-    margin-left: 40%;
-    margin-right: 45%;
-    line-height: 400%;
-    border-radius: 20%;
+    text-align: center;
+    margin: 3px;
 }
 
-.Project-align li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    display: block;
+
+@media (max-width: 600px) {
+    nav ul {
+      display: inline;
+    }
+    nav li {
+        margin: 30px;
+    }
 }
   
-.Project-align li a:hover {
+
+.button {
     text-decoration: none;
-    color: #000000;
+    letter-spacing: 0.1em;
+    border-radius: 25px;
+    background-color: #F2E8CF;
+    border: none;
+    color: #0f3719;
+    text-align: center;
+    padding: 5px;
+    width: 10%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button:hover{
+    letter-spacing: 0.25em;
 }
 
 footer {
-    margin-top: 0;
+    margin-top: 35px;
+    margin-bottom: 30px;
     text-align: center;
 }
